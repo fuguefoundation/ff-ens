@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
@@ -16,7 +16,7 @@ import { CachingInterceptor } from './services/caching-interceptor.service';
 import { AppComponent } from './app.component';
 import { DebugComponent } from './debug/debug.component';
 import { EvaluatorsComponent } from './evaluators/evaluators.component';
-import { EvaluatorDetailComponent } from './evaluator-detail/evaluator-detail.component';
+//import { EvaluatorDetailComponent } from './evaluator-detail/evaluator-detail.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -42,13 +42,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DebugComponent,
     EvaluatorsComponent,
     AboutComponent,
-    EvaluatorDetailComponent,
+    //EvaluatorDetailComponent,
     NavComponent,
     PageNotFoundComponent
   ],
   providers: [RequestCache,
     { provide: HTTP_INTERCEPTORS, useClass: CachingInterceptor, multi: true }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
