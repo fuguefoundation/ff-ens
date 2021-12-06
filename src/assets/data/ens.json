@@ -1,0 +1,31 @@
+[
+    {
+        "id": "0",
+        "name": "The Life You Can Save",
+        "eth": "tlycs.eth",
+        "image":"./assets/images/logo_150.png",
+        "request":{"type":"GET","url":"api/v0/ens/0"}
+    },
+    {
+        "id": "1",
+        "name": "80,000 Hours",
+        "eth": "80000hours.eth",
+        "image":"./assets/images/logo_150.png",
+        "request":{"type":"GET","url":"api/v0/ens/1"}
+    },
+    {
+        "id": "2",
+        "name": "Giving What We Can",
+        "eth": "givingwhatwecan.eth",
+        "image":"./assets/images/logo_150.png",
+        "request":{"type":"GET","url":"api/v0/ens/2"}
+    },
+    {
+        "id": "4",
+        "name": "Double Up Drive",
+        "eth": "doubleupdrive.eth",
+        "image":"./assets/images/logo_150.png",
+        "request":{"type":"GET","url":"api/v0/ens/3"}
+    }
+]
+
