@@ -38,7 +38,7 @@ export class EvaluatorsComponent implements OnInit {
     this.evaluatorsService.getEvaluators()
       .subscribe(evaluators => {
           this.evaluators = this.evaluatorsService.shuffle(evaluators);
-          //console.log(this.evaluators);
+          //console.log(this.evaluators); 
       });
   }
 
