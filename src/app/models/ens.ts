@@ -4,6 +4,7 @@ export class ENS {
     image: string;
     eth: string;
     focus: string;
+    color: string;
     request: {
         type: string;
         description: string;

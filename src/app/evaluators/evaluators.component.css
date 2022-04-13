@@ -88,3 +88,6 @@ mat-grid-tile{
 mat-spinner{
     margin: 30px auto;
 }
+.gradient-bw {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+}
